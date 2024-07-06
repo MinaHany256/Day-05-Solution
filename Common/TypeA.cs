@@ -8,6 +8,15 @@ namespace Common
 {
     public class TypeA
     {
+        private int x;
+        internal int y;
+        public int z;
+
+        public void Print()
+        {
+            Console.WriteLine(x);
+        }
+
     }
 
 }
