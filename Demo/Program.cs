@@ -18,8 +18,8 @@ namespace Demo
     }
     enum Gender
     {
-        Male,
-        Female
+        Male=1,
+        Female=2
     }
 
     enum Branch : byte
@@ -54,6 +54,27 @@ namespace Demo
             ///    Console.WriteLine(":("); 
             #endregion
 
+            #region Example 02
+            //Gender myGender;
+
+            //Console.Write("Please Enter your Gender : ");
+
+            #region Parse Method
+            ////myGender = (Gender) Enum.Parse(typeof(Gender), Console.ReadLine() ?? "");  //Boxing and unboxing
+            //myGender = Enum.Parse<Gender>(Console.ReadLine() ?? "",true); 
+            #endregion
+
+            #region Try Parse Method
+            //Enum.TryParse(typeof(Gender), Console.ReadLine(), true, out object? obj);
+
+            //myGender = (Gender?) obj;
+
+            //Enum.TryParse<Gender>(Console.ReadLine(), out myGender);
+
+            //Console.WriteLine(myGender); 
+            #endregion
+
+            #endregion
 
 
         }
