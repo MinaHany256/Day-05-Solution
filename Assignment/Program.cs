@@ -30,7 +30,22 @@
             #endregion
 
 
+            #region 2.Define a struct "Person" with properties "Name" and "Age". Create an array of three "Person" objects and populate it with data. Then, write a C# program to display the details of all the persons in the array.
 
+            //Person person = new Person(3);
+
+            //person.AddPerson(0, "Mina", 20);
+            //person.AddPerson(1, "Hany", 25);
+            //person.AddPerson(2, "Foad", 30);
+
+
+
+            //for (int i = 0; i < person.Size; i++)
+            //{
+            //    Console.WriteLine(person[i]);
+            //}
+
+            #endregion
 
         }
     }
