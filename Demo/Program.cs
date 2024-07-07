@@ -18,8 +18,8 @@ namespace Demo
     }
     enum Gender
     {
-        Male=1,
-        Female=2
+        Male = 1,
+        Female = 2
     }
 
     enum Branch : byte
@@ -77,21 +77,37 @@ namespace Demo
             #endregion
 
 
-            Point P1;
+            //Point P1;
             // Declare for Object of type Point
             // CLR will allocate 8 Unintialized Bytes in The STACK 
 
-            P1 = new Point();
+            //P1 = new Point();
             // P1 = new ();   // Syntax Sugar
             // new --> is just for constructor selection that
             // will intialize the attributes 
 
-            P1 = new Point();
+            //P1 = new Point();
 
             //Console.WriteLine(P1.x);
             //Console.WriteLine(P1.y);
 
-            Console.WriteLine(P1.ToString());
+            //Console.WriteLine(P1.ToString());
+
+            Employee employee = new Employee(10, "Mina", 5_000);
+
+            employee.Id = 20;  // SET Id directly throw the attribute
+            
+            Console.WriteLine(employee.Id);   // GET Id directly throw the attribute
+
+
+
+            employee.SetName("MinaHanyFoad");                // SET Name using the setter Function
+            Console.WriteLine(employee.GetName()); ; // GET Name using getter Function
+       
+            
+            employee.Salary = 10_000;
+            Console.WriteLine(employee.Salary);
+        
         }
     }
 }
