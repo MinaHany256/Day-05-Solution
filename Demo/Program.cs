@@ -93,21 +93,39 @@ namespace Demo
 
             //Console.WriteLine(P1.ToString());
 
-            Employee employee = new Employee(10, "Mina", 5_000);
+            //Employee employee = new Employee(10, "Mina", 5_000);
 
-            employee.Id = 20;  // SET Id directly throw the attribute
+            //employee.Id = 20;  // SET Id directly throw the attribute
             
-            Console.WriteLine(employee.Id);   // GET Id directly throw the attribute
+            //Console.WriteLine(employee.Id);   // GET Id directly throw the attribute
 
 
 
-            employee.SetName("MinaHanyFoad");                // SET Name using the setter Function
-            Console.WriteLine(employee.GetName()); ; // GET Name using getter Function
+            //employee.SetName("MinaHanyFoad");                // SET Name using the setter Function
+            //Console.WriteLine(employee.GetName()); ; // GET Name using getter Function
        
             
-            employee.Salary = 10_000;
-            Console.WriteLine(employee.Salary);
-        
+            //employee.Salary = 10_000;
+            //Console.WriteLine(employee.Salary);
+
+
+            PhoneBook Notebook = new PhoneBook(3);
+            Notebook.AddPerson(0, "Mina", 123);
+            Notebook.AddPerson(1, "Ahmed", 456);
+            Notebook.AddPerson(2, "Aya", 782);
+
+            //Notebook.SetNumber("Aya", 999);   // SET using Setter Method
+            //Console.WriteLine(Notebook.GetNumber("Aya")); // GET using Getter Method
+
+            //using Indexer
+            Notebook["Aya"] = 888;
+             
+            Console.WriteLine(Notebook["Aya"]);
+
+            for(int i = 0; i <Notebook.Size; i++)
+            {
+                Console.WriteLine(Notebook[i]);
+            }
         }
     }
 }
