@@ -132,7 +132,20 @@
 
             #endregion
 
+            #region 7.Create a struct called "Person" with properties "Name" and "Age". Write a C# program that takes details of 3 persons as input from the user and displays the name and age of the oldest person.
 
+            //Person person = new Person(3);
+
+            //person.AddPerson(0, "Mina", 65);
+            //person.AddPerson(1, "Hany", 45);
+            //person.AddPerson(2, "Foad", 70);
+
+
+
+            //string oldestPersonDetails = person.GetOldestPerson();
+            //Console.WriteLine(oldestPersonDetails);
+
+            #endregion
 
         }
     }
