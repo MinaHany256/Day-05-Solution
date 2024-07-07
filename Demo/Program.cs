@@ -77,6 +77,21 @@ namespace Demo
             #endregion
 
 
+            Point P1;
+            // Declare for Object of type Point
+            // CLR will allocate 8 Unintialized Bytes in The STACK 
+
+            P1 = new Point();
+            // P1 = new ();   // Syntax Sugar
+            // new --> is just for constructor selection that
+            // will intialize the attributes 
+
+            P1 = new Point();
+
+            //Console.WriteLine(P1.x);
+            //Console.WriteLine(P1.y);
+
+            Console.WriteLine(P1.ToString());
         }
     }
 }
