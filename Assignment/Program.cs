@@ -27,6 +27,17 @@
 
         #endregion
 
+        #region 5.Create an enum called "Colors" with the basic colors (Red, Green, Blue) as its members. Write a C# program that takes a color name as input from the user and displays a message indicating whether the input color is a primary color or not.
+
+        //enum primaryColors
+        //{
+        //    red,
+        //    green,
+        //    blue
+        //}
+
+        #endregion
+
 
         static void Main(string[] args)
         {
@@ -60,7 +71,7 @@
             #region 3.Create an enum called "Seas on" with the four seasons (Spring, Summer, Autumn, Winter) as its members. Write a C# program that takes a season name as input from the user and displays the corresponding month range for that season. Note range for seasons ( spring march to may , summer june to august , autumn September to November , winter December to February)
 
             //Console.Write("Please Enter a season: ");
-            
+
 
             //if(Enum.TryParse(Console.ReadLine(),true, out Season season))
             //{
@@ -89,6 +100,23 @@
             //}
 
             #endregion
+
+            #region 5.Create an enum called "Colors" with the basic colors (Red, Green, Blue) as its members. Write a C# program that takes a color name as input from the user and displays a message indicating whether the input color is a primary color or not.
+
+            //Console.Write("Enter any Color: ");
+
+            //if(Enum.TryParse(Console.ReadLine(),true, out primaryColors color))
+            //{
+            //    Console.WriteLine($"{color} is a Primry Color.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"{color} is not a primary Color.");
+            //}
+
+
+            #endregion
+
 
         }
     }
