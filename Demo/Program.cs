@@ -27,6 +27,20 @@ namespace Demo
         Dokki = 202, NasrCity, Maadi = 252, Alex, SmartVillage, BNS
     }
 
+    [Flags]  // Attribute
+    enum Permission : Byte
+    {
+        Write = 1, Read = 2, Execute = 4, Delete = 8
+    }
+
+    class Employee02
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public decimal Salary { get; set; }
+        public Permission Permission { get; set; }
+    }
+
     internal class Program
     {
         static void Main(string[] args)
@@ -96,15 +110,15 @@ namespace Demo
             //Employee employee = new Employee(10, "Mina", 5_000);
 
             //employee.Id = 20;  // SET Id directly throw the attribute
-            
+
             //Console.WriteLine(employee.Id);   // GET Id directly throw the attribute
 
 
 
             //employee.SetName("MinaHanyFoad");                // SET Name using the setter Function
             //Console.WriteLine(employee.GetName()); ; // GET Name using getter Function
-       
-            
+
+
             //employee.Salary = 10_000;
             //Console.WriteLine(employee.Salary);
 
@@ -119,13 +133,33 @@ namespace Demo
 
             //using Indexer
             Notebook["Aya"] = 888;
-             
-            Console.WriteLine(Notebook["Aya"]);
 
-            for(int i = 0; i <Notebook.Size; i++)
-            {
-                Console.WriteLine(Notebook[i]);
-            }
+            //Console.WriteLine(Notebook["Aya"]);
+
+            //for (int i = 0; i < Notebook.Size; i++)
+            //{
+            //    Console.WriteLine(Notebook[i]);
+            //}
+
+            Employee02 employee = new Employee02();
+
+            employee.Id = 101;
+            employee.Name = "Mina hany";
+            employee.Salary = 5_000;
+            employee.Permission = (Permission)7;
+
+            Permission MyP = (Permission)3;
+
+            MyP = MyP | Permission.Execute;   // Add
+
+            MyP &= ~(Permission.Read);  // Remove
+
+            MyP ^=Permission.Delete;   // Toggle (if not found , Add it)
+            MyP ^=Permission.Delete;   // Toggle (if found , Remove it)
+
+            Console.WriteLine(MyP);
+
+            //Console.WriteLine(employee.Permission);
         }
     }
 }
