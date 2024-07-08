@@ -1,43 +1,61 @@
 ﻿namespace Assignment
 {
+    #region 1.Create an enum called "WeekDays" with the days of the week (Monday to Sunday) as its members. Then, write a C# program that prints out all the days of the week using this enum.
+    //enum WeekDays
+    //{
+    //    Monday,
+    //    Tuesday,
+    //    Wednesday,
+    //    Thursday,
+    //    Friday,
+    //    Saturday,
+    //    Sunday,
+    //}
+    #endregion
+
+    #region 3.Create an enum called "Seas on" with the four seasons (Spring, Summer, Autumn, Winter) as its members. Write a C# program that takes a season name as input from the user and displays the corresponding month range for that season. Note range for seasons ( spring march to may , summer june to august , autumn September to November , winter December to February)
+
+    //enum Season
+    //{
+    //    spring,
+    //    summer,
+    //    autumn,
+    //    winter
+    //}
+
+    #endregion
+
+    #region 4.Assign the following Permissions (Read, write, Delete, Execute) in a form of Enum.
+
+    //[Flags]  
+    //enum Permission : Byte
+    //{
+    //    Write = 1, Read = 2, Execute = 4, Delete = 8
+    //}
+
+    //class Employee
+    //{
+    //    public int Id { get; set; }
+    //    public string Name { get; set; }
+    //    public decimal Salary { get; set; }
+    //    public Permission Permission { get; set; }
+    //}
+
+    #endregion
+
+    #region 5.Create an enum called "Colors" with the basic colors (Red, Green, Blue) as its members. Write a C# program that takes a color name as input from the user and displays a message indicating whether the input color is a primary color or not.
+
+    //enum primaryColors
+    //{
+    //    red,
+    //    green,
+    //    blue
+    //}
+
+    #endregion
+
     internal class Program
     {
-        #region 1.Create an enum called "WeekDays" with the days of the week (Monday to Sunday) as its members. Then, write a C# program that prints out all the days of the week using this enum.
-        //enum WeekDays
-        //{
-        //    Monday,
-        //    Tuesday,
-        //    Wednesday,
-        //    Thursday,
-        //    Friday,
-        //    Saturday,
-        //    Sunday,
-        //} 
-        #endregion
-
-        #region 3.Create an enum called "Seas on" with the four seasons (Spring, Summer, Autumn, Winter) as its members. Write a C# program that takes a season name as input from the user and displays the corresponding month range for that season. Note range for seasons ( spring march to may , summer june to august , autumn September to November , winter December to February)
-
-        //enum Season
-        //{
-        //    spring,
-        //    summer,
-        //    autumn,
-        //    winter
-        //}
-
-        #endregion
-
-        #region 5.Create an enum called "Colors" with the basic colors (Red, Green, Blue) as its members. Write a C# program that takes a color name as input from the user and displays a message indicating whether the input color is a primary color or not.
-
-        //enum primaryColors
-        //{
-        //    red,
-        //    green,
-        //    blue
-        //}
-
-        #endregion
-
 
         static void Main(string[] args)
         {
@@ -49,7 +67,6 @@
             //}
 
             #endregion
-
 
             #region 2.Define a struct "Person" with properties "Name" and "Age". Create an array of three "Person" objects and populate it with data. Then, write a C# program to display the details of all the persons in the array.
 
@@ -98,6 +115,29 @@
             //{
             //    Console.WriteLine("Invalid input");
             //}
+
+            #endregion
+
+            #region 4.Assign the following Permissions (Read, write, Delete, Execute) in a form of Enum.
+
+            //Employee employee = new Employee();
+
+            //employee.Id = 101;
+            //employee.Name = "Mina hany";
+            //employee.Salary = 5_000;
+            //employee.Permission = (Permission)7;
+
+            //Permission MyP = (Permission)3;
+
+            //MyP = MyP | Permission.Execute;  
+
+            //MyP &= ~(Permission.Read);  
+
+            //MyP ^= Permission.Delete;   
+            //MyP ^= Permission.Delete;   
+
+            //Console.WriteLine(MyP);
+
 
             #endregion
 
